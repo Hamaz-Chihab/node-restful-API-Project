@@ -1,0 +1,19 @@
+{
+  "name": "restful-api",
+  "version": "1.0.0",
+  "description": "za Node.js RESTful API Tutorial Project (Build a simple Shop API)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "restful",
+    "api"
+  ],
+  "author": "hamaz chihab eddine",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
