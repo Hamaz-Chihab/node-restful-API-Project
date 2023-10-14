@@ -4,16 +4,8 @@ const User = require('../models/User.js');//to check the ID avaliable in the tok
 const auth = async(req ,res, next)=>{
     try {
         const token = req.headers.authorization.split(' ')[1];
-        // if (req.headers.authorization) {
-        //     const token = req.headers.authorization.split(' ')[1];
-        //     // const token = req.header('Authorization').replace('Bearer','');//this is an Invalid token format
-
-        //     // rest of your code
-        // } else {
-        //     res.status(401).send({ error: 'Authorization header is missing' });
-        // }
-        // const decoded = jwt.verify(token,process.env.JWT_SECRET_KEY);
-        const decoded = jwt.verify(token,process.env.JWT_SECRET_KEY);
+        // const token = req.header('Authorization').replace('Bearer ', '');
+        const decoded = jwt.verify(token, process.env.JWT_SECRET_KEY);
         const user = await User.findOne({//extract the ID from decoded-object 
             _id: decoded._id,
         })
