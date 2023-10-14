@@ -33,5 +33,11 @@ To set up the Task Manager API on your local machine, follow these steps:
 
    ```sh
    git clone https://github.com/Hamaz-Chihab/node-restful-API
+
+   You can also explore and interact with these endpoints using the [Postman Collection](https://documenter.getpostman.com/view/30409617/2s9YR58Fmo) provided in this project. The Postman collection includes example requests and responses to help you understand and test the API.
+
+For detailed information on each endpoint and how to use them, please refer to the [API Documentation](API.md) included in this repository.
+
+The Postman collection is a valuable resource for testing and understanding the functionality of the API. You can import it into your Postman application to get started quickly.
    
    
